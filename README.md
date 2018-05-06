@@ -1,6 +1,6 @@
-# Callisto-Snapshot
+# ETSC-Snapshot
 
-Callisto Snapshot script and result
+Ethereum Social Snapshot script tool and result
 
 ## Requirements
 

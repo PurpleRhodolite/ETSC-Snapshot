@@ -7,7 +7,7 @@ from pathlib import Path
 from web3 import Web3, IPCProvider
 from pathlib import Path
 
-ipc_file = os.path.join(Path.home(), '.callisto/testnet/geth.ipc')
+ipc_file = os.path.join(Path.home(), '.ethereum/social/geth.ipc')
 
 web3 = Web3(IPCProvider(ipc_file))
 
@@ -24,7 +24,7 @@ with open('geth_genesis.json', 'a') as genesis_file:
     for row in addresses_df.itertuples():
         transactions_count += 1
         web3.eth.sendTransaction({
-            'from': '0x183394f52b2c8c034835edba3bcececa6f60b5a8',
+            'from': '0xc572dc5a3aa8ce2970259f3ae3b5e985b3bbe588',
             'to': row.address,
             'value': int(row.balance),
             'gas': 21000,
