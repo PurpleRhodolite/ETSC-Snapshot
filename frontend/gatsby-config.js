@@ -4,7 +4,7 @@ const nib = require("nib");
 module.exports = {
   pathPrefix: '/project-name',
   siteMetadata: {
-    title: 'Callisto Network',
+    title: 'Ethereum Social Network',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

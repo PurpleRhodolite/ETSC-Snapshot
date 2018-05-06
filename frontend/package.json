@@ -1,8 +1,8 @@
 {
-  "name": "callisto-snapshot",
-  "description": "Callisto snapshot script",
+  "name": "etsc-snapshot-front",
+  "description": "Ethereum Social snapshot search engine",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Akira Takizawa",
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
