@@ -26,15 +26,15 @@ with open('geth_genesis.json', 'a') as genesis_file:
         web3.eth.sendTransaction({
             'from': '0xc572dc5a3aa8ce2970259f3ae3b5e985b3bbe588',
             'to': row.address,
-            'value': int(row.balance),
+            'value': row.balance,
             'gas': 21000,
             'gasPrice': 1800000000000,
         })
         total_balance += int(row.balance)
 
-        if transactions_count == 8000:
+        if transactions_count == 10000:
             print('Last Transaction Address: {}'.format(row.address))
-            time.sleep(20)
+            time.sleep(50)
             transaction_count = 0
 
 print(total_balance)
